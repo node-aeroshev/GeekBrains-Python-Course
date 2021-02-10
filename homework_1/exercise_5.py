@@ -4,8 +4,8 @@ outgoings = input("Enter outgoings -> ")
 try:
     proceeds = float(proceeds)
     outgoings = float(outgoings)
-except ValueError:
-    print("Inputted values are not numbers")
+except ValueError as err:
+    print(f"Inputted values are not numbers: err -> {err}")
     exit(1)
 
 if proceeds > outgoings:
@@ -15,8 +15,8 @@ if proceeds > outgoings:
     staff = input("Enter quantity staff -> ")
     try:
         staff = int(staff)
-    except ValueError:
-        print("Inputted value are not integer")
+    except ValueError as err:
+        print(f"Inputted value are not integer: err -> {err}")
         exit(1)
 
     print(f"Profit in one employee: {(proceeds - outgoings) / staff:.2f}")

@@ -4,8 +4,8 @@ finish_result = input("Enter finish result -> ")
 try:
     first_day = float(first_day)
     finish_result = float(finish_result)
-except ValueError:
-    print("Incorrect input value")
+except ValueError as err:
+    print(f"Incorrect input value: err -> {err}")
     exit(1)
 
 progress = first_day

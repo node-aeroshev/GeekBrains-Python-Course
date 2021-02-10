@@ -3,8 +3,8 @@ time_ = input("Enter time in seconds: ")
 time_integer = 0
 try:
     time_integer = int(time_)
-except ValueError:
-    print("You enter not a number")
+except ValueError as err:
+    print(f"You enter not a number: err -> {err}")
     exit(1)
 
 hours = time_integer // 3600

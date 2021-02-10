@@ -3,8 +3,8 @@ user_input = input("Enter random number -> ")
 number = 0
 try:
     number = int(user_input)
-except ValueError:
-    print("You enter not a number")
+except ValueError as err:
+    print(f"You enter not a number: err -> {err}")
     exit(1)
 
 single_number = number
