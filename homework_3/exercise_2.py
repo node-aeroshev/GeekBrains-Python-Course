@@ -1,3 +1,7 @@
+"""
+Exercise 2
+"""
+
 
 def foo(name: str,
         surname: str,

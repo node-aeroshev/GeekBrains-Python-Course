@@ -1,3 +1,6 @@
+"""
+Exercise 1
+"""
 from typing import Optional
 
 
