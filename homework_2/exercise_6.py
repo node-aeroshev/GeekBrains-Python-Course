@@ -1,4 +1,3 @@
-# TODO
 from typing import List, Tuple, Dict
 
 
@@ -36,6 +35,9 @@ while True:
     mark += 1
 
 for item in goods:
-    analytics = zip(analytics, item[1])
+    for key in analytics.keys():
+        if item[1][key] not in analytics[key]:
+            analytics[key].append(item[1][key])
 
-print(analytics)
+print(f"Goods:\n{goods}")
+print(f"Analytics:\n{analytics}")
