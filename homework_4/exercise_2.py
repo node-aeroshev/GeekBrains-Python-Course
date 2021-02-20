@@ -2,7 +2,7 @@ from typing import List, Generator
 
 
 def small_left(source: List[int]) -> Generator[int, None, None]:
-    for curr in range(1,len(source)):
+    for curr in range(1, len(source)):
         if source[curr - 1] < source[curr]:
             yield source[curr]
 
