@@ -13,6 +13,7 @@ def _count_lines(ls_ln: List[str]) -> Tuple[int, List[int]]:
 if __name__ == '__main__':
     with open("exercise_2.txt", "r") as file:
         list_of_lines = file.readlines()
+        c_lines, c_words = _count_lines(list_of_lines)
 
-    c_lines, c_words = _count_lines(list_of_lines)
-    print(f"Lines: {c_lines}\nWords: {c_words}")
+    if c_lines and c_words:
+        print(f"Lines: {c_lines}\nWords: {c_words}")
