@@ -15,9 +15,11 @@ def cli() -> Optional[Dict[str, float]]:
                 "prize": prize
             }
         except ValueError as err:
-            return None
+            print(f"Occured: {err}")
+            return
     except ValueError as err:
-        return None
+        print(f"Occured: {err}")
+        return
 
 
 def calculate(data: Dict[str, float]) -> float:
