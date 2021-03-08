@@ -69,3 +69,20 @@ if __name__ == '__main__':
     print(cell_6.make_order(3))
     print(cell_4.make_order(4))
     print(cell_3.make_order(2))
+
+    try:
+        cell_except = cell_1 + 'str'
+    except TypeError as err:
+        print("Error occurred:", err)
+    try:
+        cell_except = cell_2 * 'str'
+    except TypeError as err:
+        print("Error occurred:", err)
+    try:
+        cell_except = cell_3 - 'str'
+    except TypeError as err:
+        print("Error occurred:", err)
+    try:
+        cell_except = cell_4 / 'str'
+    except TypeError as err:
+        print("Error occurred:", err)
