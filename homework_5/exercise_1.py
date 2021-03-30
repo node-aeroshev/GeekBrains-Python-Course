@@ -4,7 +4,7 @@ from typing import List
 def user_input() -> List[str]:
     input_string = ' '
     list_strings = []
-    while input_string != '':
+    while input_string:
         input_string = input("-> ")
         list_strings.append(input_string)
 
