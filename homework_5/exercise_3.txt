@@ -1,0 +1,7 @@
+Manson 21000
+Johnson 17000
+Petrov 10000
+Asanov 25000
+Hamilton 40000
+Ericssson 24000
+Cesnov 13000
